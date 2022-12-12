@@ -26,7 +26,7 @@ namespace ThCGAL {
     public:
         void OBB(double* result);
         bool LoadFromFile(const std::string& path);
-        bool Create(double* vertices, int vCount, int* face_indexes, int fCount);
+        bool Create(double* vertices, int fCount);
 
     private:
         Surface_mesh sm;

@@ -157,6 +157,8 @@
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ThCGALKernel.h" />
+    <ClInclude Include="ThCGALShape_regularization.h" />
     <ClInclude Include="ThCGALSurface_mesh.h" />
     <ClInclude Include="ThCGALUtils.h" />
   </ItemGroup>
@@ -168,6 +170,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ThCGALShape_regularization.cpp" />
     <ClCompile Include="ThCGALSurface_mesh.cpp" />
     <ClCompile Include="ThCGALUtils.cpp" />
   </ItemGroup>

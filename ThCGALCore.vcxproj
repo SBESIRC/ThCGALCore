@@ -144,6 +144,11 @@
   <ItemGroup>
     <ClCompile Include="ThCGALCore.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ThCGALUtils\ThCGALUtils.vcxproj">
+      <Project>{f7429ecb-ff1f-40d0-8d2b-e988fd4ac5ca}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

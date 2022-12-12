@@ -1,12 +1,13 @@
 #include "pch.h"
 #include "ThCGALUtils.h"
 #include "ThCGALSurface_mesh.h"
+#include "ThCGALShape_regularization.h"
 
 THCGALAPI void 
-ThCGALMeshOBBFromData(double* vertices, int vCount, int* face_indexes, int fCount, double* result)
+ThCGALMeshOBBFromSTLMesh(double* vertices, int fCount, double* result)
 {
     ThCGAL::ThCGALSurface_mesh mesh;
-    mesh.Create(vertices, vCount, face_indexes, fCount);
+    mesh.Create(vertices, fCount);
     mesh.OBB(result);
 }
 
@@ -16,4 +17,12 @@ ThCGALMeshOBBFromFile(const char* path, double* result)
     ThCGAL::ThCGALSurface_mesh mesh;
     mesh.LoadFromFile(std::string(path));
     mesh.OBB(result);
+}
+
+THCGALAPI void 
+ThCGALUniqueSegments(double* segments, int segCount, double* result, int* count)
+{
+    ThCGAL::ThCGALShape_regularization worker;
+
+
 }

@@ -12,8 +12,10 @@ extern "C" {
 
     // Declare C functions here
     THCGALAPI void ThCGALMeshOBBFromFile(const char* path, double* result);
-    THCGALAPI void ThCGALMeshOBBFromData(double* vertices, int vCount, int* face_index, int fCount, double* result);
+    THCGALAPI void ThCGALMeshOBBFromSTLMesh(double* vertices, int fCount, double* result);
 
+    // Shape Regularization
+    THCGALAPI void ThCGALUniqueSegments(double* segments, int segCount, double* result, int* count);
 
 #ifdef __cplusplus
 }
