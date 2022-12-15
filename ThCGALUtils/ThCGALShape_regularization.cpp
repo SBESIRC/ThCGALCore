@@ -1,5 +1,4 @@
 #include "pch.h"
-#include <vector>
 #include "ThCGALKernel.h"
 #include "ThCGALShape_regularization.h"
 #include <CGAL/Shape_regularization/regularize_segments.h>
