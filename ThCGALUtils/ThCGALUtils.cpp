@@ -13,13 +13,13 @@ ThCGALMeshOBBFromSTLMesh(double* vertices, int vCount, double* result)
     }
 }
 
-//THCGALAPI void 
-//ThCGALMeshOBBFromFile(const char* path, double* result)
-//{
-//    ThCGAL::ThCGALSurface_mesh mesh;
-//    mesh.LoadFromFile(std::string(path));
-//    mesh.OBB(result);
-//}
+THCGALAPI void 
+ThCGALMeshOBBFromFile(const char* path, double* result)
+{
+    ThCGAL::ThCGALSurface_mesh mesh;
+    mesh.LoadFromFile(path);
+    mesh.OBB(result);
+}
 
 THCGALAPI void 
 ThCGALUniqueSegments(double* segments, int segCount, double* result, int* count)

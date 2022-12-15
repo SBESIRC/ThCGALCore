@@ -9,6 +9,7 @@ namespace ThCGAL {
 
     public:
         void OBB(double* result);
+        bool LoadFromFile(const char* stl);
         bool CreateFromSTLMesh(double* vertices, int vCount);
 
     private:

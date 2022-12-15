@@ -11,7 +11,7 @@ extern "C" {
 #endif
 
     // Declare C functions here
-    //THCGALAPI void ThCGALMeshOBBFromFile(const char* path, double* result);
+    THCGALAPI void ThCGALMeshOBBFromFile(const char* path, double* result);
     THCGALAPI void ThCGALMeshOBBFromSTLMesh(double* vertices, int fCount, double* result);
 
     // Shape Regularization

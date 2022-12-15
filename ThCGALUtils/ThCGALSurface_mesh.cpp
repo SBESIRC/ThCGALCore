@@ -91,6 +91,11 @@ namespace ThCGAL {
         PIMPL->OBB(result);
     }
 
+    bool ThCGALSurface_mesh::LoadFromFile(const char* stl)
+    {
+        return PIMPL->LoadFromFile(stl);
+    }
+
     bool ThCGALSurface_mesh::CreateFromSTLMesh(double* vertices, int vCount)
     {
         return PIMPL->Create(vertices, vCount);
